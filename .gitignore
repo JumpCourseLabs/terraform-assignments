@@ -2,3 +2,4 @@
 *.plan
 *tfstate*
 *lock*
+terraform-debug.log
