@@ -35,6 +35,7 @@ resource "aws_route_table_association" "lab_vpc_public_route_table_association" 
   subnet_id      = aws_subnet.lab_vpc_subnet.id
 }
 
+# Create NACL and apply inbound/outbound rules
 resource "aws_network_acl" "public" {
   vpc_id = aws_vpc.lab_vpc.id
 
